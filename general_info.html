@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Informations</title>
+  <link rel="stylesheet" href="css/general_info.css">
+  <link rel="stylesheet" href="css/present_restaurant.css">
+  <link rel="stylesheet" href="css/room_detail.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- <link rel="stylesheet" href="css/home_page.css"> -->
+  <link rel="stylesheet" href="css/home_page.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/general_info.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+
+  <!-- start nav -->
+  <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
+    <div class="container-fluid mx-lg-5">
+      <a class="navbar-brand" href="#">SG<b class="info">info</b></a>
+      <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-lg-4">
+            <a class="nav-link active" aria-current="page" href="Home_page.html">Home</a>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <a class="nav-link active" href="room_list.html">Rooms</a>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <a class="nav-link active" href="general_info.html">General</a>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <a class="nav-link active collapsed" aria-expanded="false" href="Job.html">Jobs</a>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <a class="nav-link active" href="Contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item ms-lg-4">
+            <div class="dropdown">
+              <button class="dropbtn">Upload</button>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-a" onclick="document.getElementById('job').style.display='block'">Job</a>
+                <a href="#" class="dropdown-b"
+                  onclick="document.getElementById('article').style.display='block'">Article</a>
+                <a href="#" class="dropdown-c" onclick="document.getElementById('room').style.display='block'">Room</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fa-regular fa-user"></i></button>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-d"
+                  onclick="document.getElementById('register').style.display='block'">Register</a>
+                <a href="#" class="dropdown-e"
+                  onclick="document.getElementById('login').style.display='block'">Login</a>
+                <a href="">Logout</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item  ms-lg-4">
+            <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+  <!--======== END Navbar & Carousel TDTZ========= -->
+  <!-- =============================== Modal Box ===================================== -->
+  <!-- =============================== Modal Box ===================================== -->
+  <div class="w3-container">
+    <div id="job" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('job').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="main">
+          <form class="w3-container first" action="#">
+            <h1 class="modal-h1">JOB UPLOAD FORM</h1>
+            <div class="userInput">
+              <div class="modal-div">
+                <label for="jobTitle" class="modal-label">JOB TITLE</label> <br>
+                <input class="modal-input" type="text" id="jobTitle">
+              </div>
+              <div class="modal-div">
+                <label for="companyName" class="modal-label">COMPANY NAME</label> <br>
+                <input class="modal-input" type="text" id="companyName">
+              </div>
+              <div class="modal-div">
+                <label for="companyURL" class="modal-label">COMPANY URL</label> <br>
+                <input class="modal-input" type="text" id="companyURL">
+              </div>
+              <div class="modal-div">
+                <label for="jobCategory" class="modal-label">JOB CATEGORY</label> <br>
+                <select name="jobCategory" class="modal-select" id="jobCategory">
+                  <option value="#" selected disabled class="modal-option">Choose category</option>
+                  <option value="#" class="modal-option">Software</option>
+                  <option value="#" class="modal-option">Networking</option>
+                  <option value="#" class="modal-option">Database</option>
+                  <option value="#" class="modal-option">Website</option>
+                  <option value="#" class="modal-option">Cloud Computing</option>
+                </select>
+              </div>
+              <div class="modal-div">
+                <label for="role" class="modal-label">TYPE OF ROLE</label> <br>
+                <select name="role" class="modal-select" id="role">
+                  <option value="#" selected disabled class="modal-option">Choose role</option>
+                  <option value="#" class="modal-option">Frontend Developer</option>
+                  <option value="#" class="modal-option">Backend Developer</option>
+                  <option value="#" class="modal-option">Software Engineer</option>
+                  <option value="#" class="modal-option">Project Manager</option>
+                  <option value="#" class="modal-option">Data Analyst</option>
+                </select>
+              </div>
+              <div class="modal-div">
+                <label class="modal-label">SALARY</label> <br>
+                <div class="salary-div">
+                  <div class="salary-div-1">
+                    <label class="salary-label">Min</label>
+                    <input class="modal-input-salary" type="number">
+                  </div>
+                  <div class="salary-div-1">
+                    <label class="salary-label">Max</label>
+                    <input class="modal-input-salary" type="number">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-div">
+                <label for="jobLocation" class="modal-label">JOB LOCATION</label> <br>
+                <input class="modal-input" type="text" id="jobLocation">
+              </div>
+              <div class="modal-div">
+                <label for="jobDescription" class="modal-label">DESCRIPTION</label> <br>
+                <textarea class="modal-input" name="description" id="jobDescription" cols="30" rows="10"></textarea>
+              </div>
+              <button class="uploadBtn">UPLOAD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <div id="article" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('article').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="main">
+          <form class="w3-container first" action="#">
+            <h1 class="modal-h1">ARTICLE UPLOAD FORM</h1>
+            <div class="userInput">
+              <div class="modal-div">
+                <label for="journalistName" class="modal-label">JOURNALIST NAME</label> <br>
+                <input class="modal-input" type="text" id="journalistName">
+              </div>
+              <div class="modal-div">
+                <label for="newsTitle" class="modal-label">NEWS TITLE</label> <br>
+                <input class="modal-input" type="text" id="newsTitle">
+              </div>
+              <div class="modal-div">
+                <label for="newsType" class="modal-label">NEWS TYPE</label> <br>
+                <select name="typeOfNews" class="modal-select" id="newsType">
+                  <option value="#" selected disabled class="modal-option">Choose news type</option>
+                  <option value="#" class="modal-option">Global News</option>
+                  <option value="#" class="modal-option">Health</option>
+                  <option value="#" class="modal-option">Education</option>
+                  <option value="#" class="modal-option">Most Popular</option>
+                  <option value="#" class="modal-option">Travel Guide</option>
+                </select>
+              </div>
+              <div class="modal-div">
+                <label for="photoNews" class="modal-label">PLEASE UPLOAD PHOTOS</label> <br>
+                <input class="modal-input" type="file" multiple id="photoNews">
+              </div>
+              <div class="modal-div">
+                <label for="newsDescription" class="modal-label">DESCRIPTION</label> <br>
+                <textarea class="modal-input" name="description" cols="30" rows="10" id="newsDescription"></textarea>
+              </div>
+              <button class="uploadBtn">UPLOAD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <div id="room" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="width:65%">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('room').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="main-room">
+          <form class="w3-container first-room" action="#">
+            <h1 class="modal-h1-room">ROOM UPLOAD FORM</h1>
+            <div class="userInput-room">
+              <div class="modal-div-room">
+                <label for="propertyType" class="modal-label-room">PROPERTY TYPE</label> <br>
+                <input class="modal-input-room" type="text" id="propertyType">
+              </div>
+              <div class="modal-div-room">
+                <label for="avaiablility" class="modal-label-room">AVAILABILITY</label> <br>
+                <input class="modal-input-room" type="date" id="avaiablility">
+              </div>
+              <div class="modal-div-room">
+                <label for="developer" class="modal-label-room">DEVELOPER</label> <br>
+                <input class="modal-input-room" type="text" id="developer">
+              </div>
+              <div class="modal-div-room">
+                <label for="floorLevel" class="modal-label-room">FLOOR LEVEL</label> <br>
+                <input class="modal-input-room" type="text" id="floorLevel">
+              </div>
+              <div class="modal-div-room">
+                <label for="floorSize" class="modal-label-room">FLOOR SIZE (sqft)</label> <br>
+                <input class="modal-input-room" type="text" id="floorSize">
+              </div>
+              <div class="modal-div-room">
+                <label for="psf" class="modal-label-room">PSF (psf)</label> <br>
+                <input class="modal-input-room" type="text" id="psf">
+              </div>
+              <div class="modal-div-room">
+                <label for="nearestMRT" class="modal-label-room">NEAREST MRT/LRT</label> <br>
+                <input class="modal-input-room" type="text" id="nearestMRT">
+              </div>
+              <div class="modal-div-room modal-div-room-textarea">
+                <label for="addressRoom" class="modal-label-room">ADDRESS</label> <br>
+                <textarea class="modal-input-room-textarea" id="addressRoom" name="address" cols="30"
+                  rows="5"></textarea>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="rentOrSale" class="modal-label-room">RENT OR SALE</label> <br>
+                <select name="rentForSale" class="modal-select-room" id="rentOrSale">
+                  <option value="#" selected disabled class="modal-option-room">Choose option</option>
+                  <option value="#" class="modal-option-room">for rent</option>
+                  <option value="#" class="modal-option-room">for sale</option>
+                </select>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="priceRoom" class="modal-label-room modal-div-room-100">PRICE RATE(per month)</label> <br>
+                <input class="modal-input-room modal-input-room-new" style="width: 48%;" type="text" id="priceRoom">
+                <select name="priceRate" class="modal-select-room" style="width: 48%;">
+                  <option value="#" selected disabled class="modal-option-room">Currency</option>
+                  <option value="#" class="modal-option-room">USD</option>
+                  <option value="#" class="modal-option-room">SGD</option>
+                  <option value="#" class="modal-option-room">YEN</option>
+                </select>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="photoRoom" class="modal-label-room">PLEASE UPLOAD PHOTOS</label> <br>
+                <input class="modal-input-room-image" type="file" id="photoRoom" multiple>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="bedRoom" class="modal-label-room">NUMBER OF ROOMS</label> <br>
+                <select name="bedRoom" class="modal-select-room" style="width: 48%;" id="bedRoom">
+                  <option value="#" selected disabled class="modal-option-room">Bed room</option>
+                  <option value="#" class="modal-option-room">1</option>
+                  <option value="#" class="modal-option-room">2</option>
+                  <option value="#" class="modal-option-room">3</option>
+                  <option value="#" class="modal-option-room">4</option>
+                  <option value="#" class="modal-option-room">5</option>
+                </select>
+                <select name="bathRoom" class="modal-select-room" style="width: 48%;" id="bathroom">
+                  <option value="" selected disabled class="modal-option-room">Bath room</option>
+                  <option value="" class="modal-option-room">1</option>
+                  <option value="" class="modal-option-room">2</option>
+                  <option value="" class="modal-option-room">3</option>
+                  <option value="" class="modal-option-room">4</option>
+                  <option value="" class="modal-option-room">5</option>
+                </select>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="feature" class="modal-label-room">SELECT KEY FEATURES</label> <br>
+                <select name="keyFeature" id="feature" class="modal-select-room" style="width: 100%;padding-left:10px;"
+                  multiple>
+                  <option value="#" class="modal-option-room-special">Air-Conditioning</option>
+                  <option value="#" class="modal-option-room">Cooker Hob/Hood</option>
+                  <option value="#" class="modal-option-room">Fridge</option>
+                  <option value="#" class="modal-option-room">High Floor</option>
+                  <option value="#" class="modal-option-room">Intercom</option>
+                  <option value="#" class="modal-option-room">Renovated</option>
+                  <option value="#" class="modal-option-room">Dryer</option>
+                  <option value="#" class="modal-option-room">Water Heater</option>
+                  <option value="#" class="modal-option-room">Balcony</option>
+                  <option value="#" class="modal-option-room">Corner Unit</option>
+                  <option value="#" class="modal-option-room">Park / Greenery View</option>
+                  <option value="#" class="modal-option-room">Internet Connection</option>
+                  <option value="#" class="modal-option-room">Oven / Microwave</option>
+                  <option value="#" class="modal-option-room">Washing Machine</option>
+                </select>
+                <p>Please press Ctrl key and click to select multiple items</p>
+              </div>
+              <div class="modal-div-room modal-div-room-100">
+                <label for="facility" class="modal-label-room">SELECT FACILITIES</label> <br>
+                <select name="facility" class="modal-select-room" id="facility" style="width: 100%;padding-left:10px;"
+                  multiple>
+                  <option value="#" class="modal-option-room-special">Barbeque Area</option>
+                  <option value="#" class="modal-option-room">Covered car park</option>
+                  <option value="#" class="modal-option-room">Function room</option>
+                  <option value="#" class="modal-option-room">Mini-Mart</option>
+                  <option value="#" class="modal-option-room">24 hours security</option>
+                  <option value="#" class="modal-option-room">Swimming pool</option>
+                  <option value="#" class="modal-option-room">Billiards room</option>
+                  <option value="#" class="modal-option-room">Clubhouse</option>
+                  <option value="#" class="modal-option-room">Gymnasium room</option>
+                  <option value="#" class="modal-option-room">Sauna</option>
+                  <option value="#" class="modal-option-room">Squash court</option>
+                  <option value="#" class="modal-option-room">Tennis courts</option>
+                </select>
+              </div>
+
+              <div class="modal-div-room modal-div-room-textarea">
+                <label for="descriptionRoom" class="modal-label-room">DESCRIPTION</label> <br>
+                <textarea class="modal-input-room-textarea" id="descriptionRoom" name="description" cols="30"
+                  rows="10"></textarea>
+              </div>
+              <button class="uploadBtn-room">UPLOAD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <div id="login" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('login').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="main">
+          <form class="w3-container first" action="#">
+            <h1 class="modal-h1">Welcome to SG Info</h1>
+            <div class="userInput">
+              <div class="modal-div">
+                <label for="emailLogin" class="modal-label">EMAIL</label> <br>
+                <input class="modal-input" type="text" placeholder="Enter email" id="emailLogin">
+              </div>
+              <div class="modal-div">
+                <label for="passowordLogin" class="modal-label">PASSWORD</label> <br>
+                <input class="modal-input" type="password" placeholder="Enter password" id="passowordLogin">
+              </div>
+              <p><a href="#">Forgot Password?</a></p>
+              <button class="uploadBtn">LOGIN</button>
+            </div>
+
+            <div class="otherLogin">
+              <p class="other-p">(OR)</p>
+              <div class="google">
+                <img class="other-img" src="images/login_register/google.svg" alt="google">
+                <h2 class="other-h2"><a class="other-a" href="#">Continue with Google</a></h2>
+              </div>
+              <div class="facebook">
+                <img class="other-img" src="images/login_register/facebook.svg" alt="facebook">
+                <h2 class="other-h2"><a href="#" class="other-a">Continue with Facebook</a> </h2>
+              </div>
+              <div class="apple">
+                <img class="other-img" src="images/login_register/apple.svg" alt="apple">
+                <h2 class="other-h2"><a class="other-a" href="#">Continue with Apple</a></h2>
+              </div>
+              <div class="other-login">New to SG Info? <a href="#" class="other-login-a">Sign up</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <div id="register" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('register').style.display='none'"
+            class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="main">
+          <form class="w3-container first" action="#">
+            <h1 class="modal-h1">Sign up</h1>
+            <h4 class="modal-h4">Search everything on your own time from SG Info</h4>
+            <div class="userInput">
+              <div class="modal-div">
+                <label for="fullName" class="modal-label">FULL NAME</label> <br>
+                <input class="modal-input" type="text" placeholder="Enter fullname" id="fullName">
+              </div>
+              <div class="modal-div">
+                <label for="emailRegister" class="modal-label">EMAIL</label> <br>
+                <input class="modal-input" type="text" placeholder="Enter email" id="emailRegister">
+              </div>
+              <div class="modal-div">
+                <label for="passwordRegister" class="modal-label">PASSWORD</label> <br>
+                <input class="modal-input" type="password" placeholder="Enter password" id="passwordRegister">
+              </div>
+              <p class="modal-p">Between 8 and 72 characters</p>
+              <button class="uploadBtn">REGISTER</button>
+            </div>
+
+            <div class="otherLogin">
+              <p class="other-p">(OR)</p>
+              <div class="google">
+                <img class="other-img" src="images/login_register/google.svg" alt="google">
+                <h2 class="other-h2"><a class="other-a" href="#">Continue with Google</a></h2>
+              </div>
+              <div class="facebook">
+                <img class="other-img" src="images/login_register/facebook.svg" alt="facebook">
+                <h2 class="other-h2"><a href="#" class="other-a">Continue with Facebook</a> </h2>
+              </div>
+              <div class="other-login">Already a member? <a href="#" class="other-login-a">Log in</a></div>
+            </div>
+
+            <div class="term&condition">
+              <div class="line"></div>
+              <div class="term">
+                <p class="term-p"><i class="fa-solid fa-square-check"></i> I accept Coursera's <a href="#"
+                    class="term-a">Terms of Use</a> and <a href="#" class="term-a">Privacy Notice</a>. Having trouble
+                  logging in? <a href="#">Learner help center</a></p>
+                <p class="term-p">This site is protected by reCAPTCHA Enterprise and the Google <a href="#"
+                    class="term-a">Privacy Policy</a> and <a href="#" class="term-a">Terms of Service apply</a>.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================= Globel News ========================================== -->
+  <section id="globel_trending_news_container">
+    <div class="trending_news">
+      <p style="border: 5px; border-color: black;">TRENDING NEWS</p>
+    </div>
+    <div id="globel_news_container">
+
+
+      <div class="globel_news_box">
+        <a href="general_info_detail.html">
+          <div class="background_color">
+            <p class="news_type news_type1">Travel</p>
+            <h4 class="news_title news_title1">Where is The Best Present In Singapore, Let's purchase a lot of presents
+            </h4>
+          </div>
+        </a>
+      </div>
+
+      <div id="globel_news_container2">
+        <div class="globel_news_box2">
+          <a href="general_info_detail.html">
+            <div class="background_color">
+              <p class="news_type">Health</p>
+              <h4 class="news_title">Work Out as Much as Possible During Your All Vacations</h4>
+
+            </div>
+          </a>
+        </div>
+        <div class="globel_news_box2 globel_news_box3">
+          <a href="general_info_detail.html">
+            <div class="background_color">
+              <p class="news_type">Restaurant</p>
+              <h4 class="news_title">The Health Foods & The Delicious Foods!</h4>
+            </div>
+          </a>
+        </div>
+        <div class="globel_news_box2 globel_news_box4">
+          <a href="general_info_detail.html">
+            <div class="background_color">
+              <p class="news_type">Restaurant</p>
+              <h4 class="news_title">The Health Foods & The Delicious Foods!</h4>
+            </div>
+          </a>
+        </div>
+        <div class="globel_news_box2 globel_news_box5">
+          <a href="general_info_detail.html">
+            <div class="background_color">
+              <p class="news_type">Travel</p>
+              <h4 class="news_title">This Place is Very Instering,We Should Go There!</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================= End of Globel News ========================================== -->
+
+
+  <!-- Global News Start -->
+  <section id="global-news">
+    <div class="first-global">
+      <h5 class="header3">GLOBLE NEWS</h5>
+      <div class="information">
+        <!-- <div class="news"> -->
+        <div class="gl-news-photo1">
+          <a href="general_info_detail.html">
+            <img src="gl_news_image/news1.jpg" class="image1" alt="">
+          </a>
+          <div class="gl-news-des">
+            <h6 class="header4">GLOBAL</h6>
+            <h6><strong>Witnessing the Birth of the News Coronavirus Economy </strong></h6>
+            <p> David Lar - June 3, 2020 <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, at.
+            </P>
+          </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="fourphotos">
+          <!-- <div class="column"> -->
+          <div class="gl-news-photo2">
+            <!-- <a href="general_info_detail.html"> -->
+            <img src="gl_news_image/news2.jpg" class="image2" alt="">
+            <!-- </a> -->
+            <p class="gl-text"><strong>More and More People Stay Home as Coronavirus Spreads</strong><br>
+              June 3, 2020
+            </p>
+          </div>
+          <div class="gl-news-photo2">
+            <img src="gl_news_image/news3.jpg" class="image2" alt="">
+            <p class="gl-text"><strong>The Real Economy Has Never Been Tested by a Pandemic</strong><br>
+              June 23, 2020
+            </p>
+          </div>
+          <div class="gl-news-photo2">
+            <img src="gl_news_image/news4.jpg" class="image2" alt="">
+            <p class="gl-text"><strong>How to Think and Act in the Plammeting Stock Market</strong><br>
+              May 8, 2020
+            </p>
+          </div>
+          <div class="gl-news-photo2">
+            <img src="gl_news_image/news5.jpg" class="image2" alt="">
+            <p class="gl-text"><strong>Fashion Photoshoot Campaign</strong><br>
+              Nov 21, 2020
+            </p>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="must_read_container">
+      <h5>MUST READ</h5>
+      <div class="gen_info_card">
+        <h4>What do we need to go to Singapore?</h4>
+        <ul>
+          <a href="#">
+            <li>Passport</li>
+          </a>
+          <a href="#">
+            <li>Airticket</li>
+          </a>
+          <a href="#">
+            <li>Covid 19 Vacinaiton Certificate</li>
+          </a>
+          <a href="#">
+            <li>Filling Arrival Card</li>
+          </a>
+        </ul>
+        <a href="general_info_detail.html">
+          <button class="gen_info_btn">See More</button>
+        </a>
+      </div>
+    </div>
+    <!-- 
+    <div id="gl-general">
+      <div class="news-contianer">
+          <h3 class="header3">MUST READ</h3>
+          <div class="popular">
+          <div class="gl-news-photo3">
+            <img src="gl_news_image/news6.jpg" class="image3" alt="">
+            <p class="gl-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore perferendis ipsum,
+              accusantium cupiditate aliquam optio?</p>
+          </div>
+          <div class="gl-news-photo3">
+            <img src="gl_news_image/news7.jpg" class="image3" alt="">
+            <p class="gl-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore perferendis ipsum,
+              accusantium cupiditate aliquam optio?</p>
+          </div>
+          <div class="gl-news-photo3">
+            <img src="gl_news_image/news9.jpg" class="image3" alt="">
+            <p class="gl-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore perferendis ipsum,
+              accusantium cupiditate aliquam optio?</p>
+          </div>
+          <div class="gl-news-photo3">
+            <img src="gl_news_image/news10.jpg" class="image3" alt="">
+            <p class="gl-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore perferendis ipsum,
+              accusantium cupiditate aliquam optio?</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <!-- ============================= End of Globel news ========================================== -->
+
+  <!-- ======================== Travel Guide ============================= -->
+
+  <section class="swiper-container mySwiper">
+    <div class="travel_guide">
+      <h4>TRAVEL GUIDES</h4>
+    </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide card text-center cover">
+        <div class="card-body">
+          <div class="overlay">
+            <p class="travel_type">Japan</p>
+            <p>Work Out as Much as
+              Possible During Your Vacations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide card text-center cover1">
+        <div class="card-body">
+          <div class="overlay">
+            <p class="travel_type">Korea</p>
+            <p>Work Out as Much as
+              Possible During Your Vacations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide card text-center cover2">
+        <div class="card-body">
+          <div class="overlay">
+            <p class="travel_type">China</p>
+            <p>Out of The World
+              with Exotic Travel Destinations</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide card text-center cover3">
+        <div class="card-body">
+          <div class="overlay">
+            <p class="travel_type">Singapore</p>
+            <p>Barli Travel Experiences: Combine Luxury with a Real Life Adventure</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide card text-center cover4">
+        <div class="card-body">
+          <div class="overlay">
+            <p class="travel_type">Malisia</p>
+            <p>Out of The World
+              with Exotic Travel Destinations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- ============================= End of Travel Guide Slider ========================================== -->
+
+
+  <!-- moh's general -->
+  <section id="general_info">
+    <div id="first_general">
+      <div class="first_container">
+        <h4 class="header_3">PRESENTS</h4>
+        <a href="general_info_detail.html">
+          <img src="images/present_images/gift_2.jpg" alt="gift_box" class="gift_img">
+        </a>
+        <div class="single_des">
+          <h5 class="header_5">PRESENT</h5>
+          <h4>Handi Shop</h4>
+          <span><strong>Mr Harry</strong> - June 30, 2022</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae, repellat odit dolore
+            recusandae exercitationem officiis similique.</p>
+        </div>
+        <div class="small_article">
+          <div class="small_img">
+            <a href="general_info_detail.html">
+              <img src="images/present_images/present_1.jpg" alt="">
+            </a>
+            <p class="small_title">
+              <strong>Hand Me Name</strong> <br>
+              <span><strong>Mr August</strong> - July 1, 2022</span> <br>
+            </p>
+          </div>
+        </div>
+        <div class="small_article">
+          <div class="small_img">
+            <a href="general_info_detail.html">
+              <img src="images/present_images/gift_1.jpg" alt="">
+            </a>
+            <p class="small_title">
+              <strong>We promise comfort</strong> <br>
+              <span><strong>Mr August</strong> - July 1, 2022</span> <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="first_container first_container_2">
+        <h4 class="header_3">RESTAURANTS</h4>
+        <a href="general_info_detail.html">
+          <img src="images/present_images/restaurant_2.jpg" alt="gift_box" class="gift_img">
+        </a>
+        <div class="single_des">
+          <h5 class="header_5">RESTAURANT</h5>
+          <h4>Food With Simplicity</h4>
+          <span><strong>Mr Harry</strong> - June 30, 2022</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae, repellat odit dolore
+            recusandae exercitationem officiis similique.</p>
+        </div>
+        <div class="small_article">
+          <div class="small_img">
+            <a href="general_info_detail.html">
+              <img src="images/present_images/restaurant_3.jpg" alt="">
+            </a>
+            <p class="small_title">
+              <strong>Coffee With You</strong> <br>
+              <span><strong>Ms Luna</strong> - July 1, 2022</span> <br>
+            </p>
+          </div>
+        </div>
+        <div class="small_article">
+          <div class="small_img">
+            <a href="general_info_detail.html">
+              <img src="images/present_images/restaurant_1.jpg" alt="">
+            </a>
+            <p class="small_title">
+              <strong>From Our Garden to Your Table</strong> <br>
+              <span><strong>Mr August</strong> - July 1, 2022</span> <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="second_general">
+      <div class="second_container">
+        <h4 class="header_3">MOST POPULAR</h4>
+        <div class="circle_gp">
+          <div class="circle">
+            <a href="general_info_detail.html">
+              <img src="images/present_images/nutrition.jpg" alt="">
+            </a>
+            <p>
+              Health <br>
+              <span>A healthy outside starts from the inside</span>
+            </p>
+          </div>
+          <div class="circle">
+            <img src="images/present_images/gift_1.jpg" alt="">
+            <p>
+              Present <br>
+              <span>Impress them with Outfits</span>
+            </p>
+          </div>
+          <div class="circle">
+            <img src="images/present_images/book.jpg" alt="">
+            <p>
+              Education <br>
+              <span>I never lose. I either win or learn</span>
+            </p>
+          </div>
+          <div class="circle">
+            <img src="images/present_images/present_1.jpg" alt="">
+            <p>
+              Gift Shop <br>
+              <span>Forever is composed of nows</span>
+            </p>
+          </div>
+          <div class="circle">
+            <img src="images/present_images/4traveller.jpg" alt="">
+            <p>
+              Travel <br>
+              <span>Wherever you go, go with all your heart</span>
+            </p>
+          </div>
+          <div class="circle">
+            <img src="images/present_images/work_group.jpg" alt="">
+            <p>
+              Business <br>
+              <span>Great things never came from comfort zones</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of middle general -->
+
+  <!-- ============================ For Health & Education Article ============================= -->
+  <section id="health_education_container">
+    <div class="article_container">
+      <div class="article_title">
+        <h4 class="health_title">Health & Education</h4>
+        <hr class="longline" />
+      </div>
+
+
+      <div class="article">
+
+        <div class="article_row">
+          <img src="./images/general_images/health-20.jpg" alt="" class="article_image">
+          <div class="article_text">
+            <h4 class="article_type">Health</h4>
+            <h5 class="edu_title">The best food for health</h5>
+            <span class="edu_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores,
+              aliquid non saepe, amet maxime excepturi adipisci et modi veritatis tempora consectetur molestiae?
+              Rerum blanditiis atque doloremque. Laborum, cumque obcaecati.</span>
+          </div>
+        </div>
+
+        <div class="article_row1">
+          <img src="./images/general_images/university.jpg" alt="" class="article_image">
+          <div class="article_text">
+            <h4 class="article_type">Education</h4>
+            <h5 class="edu_title">The best University in Singapore</h5>
+            <span class="edu_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              officiis impedit,.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="advertisement">
+      <div class="advertisement_title">
+        <hr class="shortline" />
+        <span class="advertise_title">Advertisement</span>
+        <hr class="shortline" />
+      </div>
+      <!--Bootstrap card with slider class-->
+      <div class="advertisement_container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <img src="images/general_images/beach.avif" class="d-block w-100 img_slider" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/general_images/fashion.jpg" class="d-block w-100 img_slider" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="images/general_images/travel-02.jpg" class="d-block w-100 img_slider" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="adertise_carousel_text">
+            <h5>NEWSPAPER</h5>
+            <p>The art of puplishing.</p>
+            <h6>THE MOST POPULAR NEWS MAGAZINE THEME</h6>
+            <button class="buynow_btn">Buy Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- footer -->
+  <footer class="section-footer">
+    <div class="foot-col">
+      <h4 class="footer-h4">SG<span class="info">INFO</span></h4>
+      <p class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+
+    <div class="foot-col">
+      <h4 class="footer-h4">INFORMATION</h4>
+      <a class="footer-a" href="Contact.html">Contact Us</a>
+      <a class="footer-a" href="#">Terms & Conditions</a>
+      <a class="footer-a" href="#">Privacy Policy</a>
+      <a class="footer-a" href="#">F.A.Q.</a>
+    </div>
+
+    <div class="foot-col">
+      <h4 class="footer-h4">QUICK LINKS</h4>
+      <a class="footer-a" href="room_list.html">Rooms</a>
+      <a class="footer-a" href="Job.html">Jobs</a>
+      <a class="footer-a" href="general_info.html">General</a>
+    </div>
+
+    <div class="foot-col footer-last">
+      <h4 class="footer-h4">CONTACT</h4>
+      <p class="footer-p">90 Madison Ave,First Floor New York,NY</p>
+      <a class="footer-a" href="tel:+9519669724">Telephone: 200 256 1855</a>
+      <a class="footer-a" href="mailto:sginfo@myanmar.com">Email: mail@yourmail.com</a>
+      <div class="social-links">
+        <i class="uil uil-facebook-f uil_icon"></i>
+        <i class="uil uil-instagram-alt uil_icon"></i>
+        <i class="uil uil-twitter uil_icon"></i>
+        <i class="uil uil-youtube uil_icon"></i>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p class="footer-p footer-p-last">ITVisionHub SGcamp4@2022 | All Rights Reserved</p>
+    </div>
+    </div>
+
+    <div class="copyright">
+      <p class="footer-p footer-p-last">ITVisionHub SGcamp4@2022 | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- end of footer -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrapp -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/room_posting.css">
+  </head>
+<body>
+
+       
+<section style="margin-top: 40px;">
+    <div class="card" style="width: 50%;">
+        <div class="card-header">
+            <h4>Home's Information</h4>
+            <!-- ================ Home Info TextBox ============================== -->
+        </div>
+            <div class="home_info">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="groupInput">Project Name</label>
+                        <input type="text" class="form-control"  id="groupInput">
+                      </div>
+                      <div class="form-group">
+                        <label for="groupInput">Floor Level</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                      <div class="form-group">
+                        <label for="groupInput">MRT/LRT Line</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                    <div class="form-group">
+                        <label for="groupInput">Project Type</label>
+                        <input type="text" class="form-control"  id="groupInput">
+                      </div>
+                      <div class="form-group">
+                        <label for="groupInput">Floor Size</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                      <div class="form-group">
+                        <label for="groupInput">Nearest MRT/LRT</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                    </div>
+            </div>
+            <div class="address_form">
+                <div class="form-group">
+                    <label for="groupInput">Address</label>
+                    <input type="text" class="form-control"  id="groupInput">
+                  </div>
+            </div>
+              <div class="home_info">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="groupInput">Developer</label>
+                        <input type="text" class="form-control"  id="groupInput">
+                      </div>
+                      <div class="form-group">
+                        <label for="groupInput">Availability</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="groupInput">PSF</label>
+                        <input type="text" class="form-control" id="groupPassword">
+                      </div>
+                  
+            </div>
+            </div>
+
+             <!-- ============================== Checkbox For Rent And Sale ================== -->
+           
+              <div class="rentorsale">
+                <label class="rent">
+                  <input type="checkbox"> For Rent
+                </label>
+                <label class="rent">
+                    <input type="checkbox"> For Sale
+                  </label>
+              </div>
+              <!-- ======================== Room Price ================================= -->
+             
+                <div class="price_dropdown">
+                  <label for="sort"> Price Range </label>
+                  <select id="price_unit" class="form-select" aria-label="Default select example">
+                    <option selected>Choose Money Unit</option>
+                    <option value="1">USD</option>
+                    <option value="2">SGD</option>
+                    <option value="3">MMKS</option>
+                    <option value="3">YEN</option>
+                  </select>
+                  <input type="text" placeholder="type price" class="price_text">
+                </div>
+                
+              <!-- ======================== The number of room and birthroom and toilet ================================= -->
+              <div class="number_of_room_container">
+                <div class="form-field">
+                  <label for="name" class="label">No of Room</label>
+                  <input id="name" class="input-text" type="number">
+                </div>
+                <div class="form-field ">
+                  <label for="name" class="label">No of Birthroom</label>
+                  <input id="name" class="input-text" type="number">
+                </div>
+                <div class="form-field">
+                  <label for="name" class="label">No of Toilet</label>
+                  <input id="name" class="input-text" type="number">
+                </div>
+              </div>
+              <!-- ======================== Agent's contact information ================================= -->
+
+              <div class="agent_informations">
+                <div class="agent_info">
+                  <div class="check_agent">
+                    <input type="checkbox">  if you are agent, please check here
+                  </div>
+                  <div class="input-group">
+                     <input id="name" class="agent_info" type="text" placeholder="Agent's name">
+                   </div>
+                   <div class="input-group">
+                     <input id="name" class="agent_info" type="phone" placeholder="Agent's phone">
+                   </div>
+                   <div class="input-group">
+                     <input id="name" class="agent_info" type="email" placeholder="Agent's email">
+                   </div>
+                 
+                </div>
+                <div class="payment_type_container">
+                  <h5>Available Payment Types</h5>
+                  <div class="payment_types">
+                    <label class="payment_type">
+                      <input type="checkbox"> 
+                      <img src="./images/room_posting_image/cbpay-card.jpg" alt="..." class="payment_type_logo">
+                    </label>
+                    <label class="payment_type">
+                      <input type="checkbox"> 
+                      <img src="./images/room_posting_image/master-cart.png" alt="..." class="payment_type_logo">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="payment_type">
+                      <input type="checkbox"> 
+                      <img src="./images/room_posting_image/mpu-card.png" alt="..." class="payment_type_logo">
+                    </label>
+                    <label class="payment_type">
+                      <input type="checkbox"> 
+                      <img src="./images/room_posting_image/Free-Credit-Card-Logo-92.png" alt="..." class="payment_type_logo">
+                    </label>
+                  </div>
+               </div>
+              </div>
+
+              <!-- ======================== End of Agent's contact information And Payment Type ============================ -->
+              <div class="container">
+                <div class="form-group">
+                <label for=" Email1msg">Descriptions:</label>
+                <textarea class="index_type" rows="5"></textarea>
+                </div>
+              </div>
+
+                <!-- ============================== Facilites and Features and NearBy ======================================= -->
+
+                <div class="facility_container">
+                <div class="multi_select_box">
+                  <select class="multi_select width-100">
+                    <option value="">Select Key Features</option>
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                    <option value="">Saturday</option>
+                    <option value="">Sunday</option>
+                  </select>
+                </div>
+                <div class="multi_select_box">
+                  <select class="multi_select width-100">
+                    <option value="">Select Facilities</option>
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                    <option value="">Saturday</option>
+                    <option value="">Sunday</option>
+                  </select>
+                </div>
+                <div class="multi_select_box">
+                  <select class="multi_select width-100">
+                    <option value="">Select Near By</option>
+                    <option value="">Monday</option>
+                    <option value="">Tuesday</option>
+                    <option value="">Wednesday</option>
+                    <option value="">Thursday</option>
+                    <option value="">Friday</option>
+                    <option value="">Saturday</option>
+                    <option value="">Sunday</option>
+                  </select>
+                </div>
+              </div>
+                <button type="submit" class="btn btn-info">Submit Information</button>
+             
+                <script src="./main.js"></script>
+            <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+            </section>
+</body>
+</html>

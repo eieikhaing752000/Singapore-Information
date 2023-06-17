@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="css/job.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- start nav -->
+  <nav class="navbar navbar-expand-lg bg_blue py-4 navbar-dark sticky-top">
+      <div class="container-fluid mx-lg-5">
+        <a class="navbar-brand" href="Home_page.html">SG<b class="info">info</b></a>
+        <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-lg-4">
+              <a class="nav-link active" aria-current="page" href="Home_page.html">Home</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href="#">Rooms</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href="#">General</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href="Job.html">Jobs</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href="Contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href=""><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link active" href=""><img src="images/myanmar.png" alt="" class="logoimg"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <!-- end nav -->
+  <body>
+    <div class="py-5 title-text">
+        <p class="text-center text-primary " style="font-size: 24px;">Fill Your Information</p>
+    </div>
+    <!-- <h3 class="info-fill mt-5">Fill Your Information</h3> -->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="offset-md-2 col-12 col-md-8">
+                    <div class="card shadow">
+                        <div class="card-body mt-4">
+                            <form method="#" action="#" enctype="multipart/form-data">
+                                <div class="form-group row">
+                                    <label for="name" class="offset-md-1 col-sm-3 col-form-label">Position</label>                         
+                                        <div class="col-sm-7">
+                                        <input type="text" name="name" class="form-control" id="name" readonly="readonly" value="C# Developer">
+                                        </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="name" class="offset-md-1 col-sm-3 col-form-label">Name</label>                         
+                                        <div class="col-sm-7">
+                                        <input type="text" name="name" class="form-control " id="name" value="">
+                                        </div>                          
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="staticEmail" class="offset-md-1 col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-7">
+                                        <input type="email" class="form-control " id="staticEmail" name="email" value="">
+                                        </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="phone" class="offset-md-1 col-sm-3 col-form-label">Phone Number</label>
+                                        <div class="col-sm-7">
+                                        <input type="number" class="form-control " id="phone" name="phone" value="">
+                                        </div>
+                                </div>
+                                <div class="form-group row mt-3">
+                                    <label for="cv" class="offset-md-1 col-sm-3 col-form-label">CV_File</label>
+                                        <div class="col-sm-7">
+                                        <input type="file" accept=".pdf,.docx,.doc" class="form-control-file " id="cv" name="cv_file">
+                                        </div>
+                                </div>
+                               <input type="submit" value="Send" class="btn btn-outline-primary mt-3 float-end w-15 me-5">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+  </body>
+</html>
